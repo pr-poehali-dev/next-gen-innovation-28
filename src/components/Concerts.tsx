@@ -6,16 +6,32 @@ const translations = {
   en: {
     heading: "Upcoming Concerts",
     learnMore: "Learn More",
+    setlist: "Setlist",
   },
   de: {
     heading: "Kommende Konzerte",
     learnMore: "Mehr erfahren",
+    setlist: "Setlist",
   },
   ru: {
     heading: "Предстоящие концерты",
     learnMore: "Подробнее",
+    setlist: "Сет-лист",
   },
 }
+
+const setlist = [
+  "Дорадура",
+  "Нам с тобой",
+  "Малиновый закат",
+  "Ненавижу",
+  "Мне не нужен рай",
+  "Бойся",
+  "Хочу быть с тобой",
+  "Созвездие",
+  "Конфетки",
+  "Люби меня",
+]
 
 const concerts = {
   en: [
@@ -113,6 +129,16 @@ export default function Concerts({ language }: ConcertsProps) {
                   <h3 className="text-charcoal mb-1">{concert.title}</h3>
                   <p className="text-charcoal/70 mb-1">{concert.venue}</p>
                   <small className="text-taupe">{concert.location}</small>
+                  <div className="mt-4">
+                    <small className="font-medium text-charcoal/50 uppercase tracking-widest mb-2 block">{t.setlist}</small>
+                    <div className="flex flex-wrap gap-2">
+                      {setlist.map((song, i) => (
+                        <span key={i} className="text-xs px-3 py-1 border border-taupe/40 text-charcoal/70 rounded-full">
+                          {song}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
                 </div>
                 <div className="flex justify-start md:justify-end">
                   <button className="text-gold hover:text-gold/80 transition-colors text-sm font-medium">
