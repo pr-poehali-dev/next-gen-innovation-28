@@ -43,6 +43,19 @@ export default function Hero({ language }: HeroProps) {
           <div className="line-accent mb-10 animate-fade-in-up animation-delay-200"></div>
           <p className="text-white font-light max-w-2xl mb-16 animate-fade-in-up animation-delay-300">{t.description}</p>
 
+          {/* Spotify Player */}
+          <div className="mb-12 animate-fade-in-up animation-delay-350">
+            <iframe
+              src="https://open.spotify.com/embed/track/7GhIk7Il098yCjg4BQjzvb?utm_source=generator&theme=0"
+              width="100%"
+              height="80"
+              frameBorder="0"
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+              loading="lazy"
+              className="rounded-md max-w-md"
+            />
+          </div>
+
           {/* Social Links */}
           <div className="flex gap-8 animate-fade-in-up animation-delay-400">
             <a
