@@ -4,19 +4,19 @@ interface HeroProps {
 
 const translations = {
   en: {
-    title: "Alexander Voss",
-    subtitle: "Classical Pianist",
-    description: "A virtuoso performer captivating audiences at the world's most prestigious concert halls",
+    title: "Dora",
+    subtitle: "Singer & Songwriter",
+    description: "Russian pop-rock artist who conquered millions of hearts — from viral debut to Spotify Russia's #1",
   },
   de: {
-    title: "Alexander Voss",
-    subtitle: "Klassischer Pianist",
-    description: "Ein virtuoser Performer, der Publikum in den renommiertesten Konzertsalen der Welt fasziniert",
+    title: "Dora",
+    subtitle: "Sängerin & Songwriterin",
+    description: "Russische Pop-Rock-Künstlerin, die Millionen Herzen erobert hat — vom viralen Debüt bis zur Nr. 1 auf Spotify Russland",
   },
   ru: {
-    title: "Александр Фосс",
-    subtitle: "Классический пианист",
-    description: "Виртуозный исполнитель, очаровывающий публику в престижнейших концертных залах мира",
+    title: "Дора",
+    subtitle: "Певица и автор песен",
+    description: "Российская поп-рок исполнительница, покорившая миллионы — от вирусного дебюта до первого места Spotify России",
   },
 }
 
@@ -28,8 +28,8 @@ export default function Hero({ language }: HeroProps) {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <img
-          src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/DSCF3797.JPG-D5CA7ICwqzRlSb4xwdgFIdtxI4Epof.jpeg"
-          alt="Pianist performing"
+          src="/images/dscf3797.jpeg"
+          alt="Дора"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-charcoal/35"></div>
@@ -46,7 +46,18 @@ export default function Hero({ language }: HeroProps) {
           {/* Social Links */}
           <div className="flex gap-8 animate-fade-in-up animation-delay-400">
             <a
-              href="https://instagram.com"
+              href="https://vk.com/doramusic"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white/80 hover:text-gold transition-colors duration-300"
+            >
+              <span className="sr-only">VK</span>
+              <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M15.684 0H8.316C1.592 0 0 1.592 0 8.316v7.368C0 22.408 1.592 24 8.316 24h7.368C22.408 24 24 22.408 24 15.684V8.316C24 1.592 22.408 0 15.684 0zm3.692 17.123h-1.744c-.66 0-.864-.525-2.05-1.727-1.033-1-1.49-1.135-1.744-1.135-.356 0-.458.102-.458.593v1.575c0 .424-.135.678-1.253.678-1.846 0-3.896-1.118-5.335-3.202C4.624 10.857 4.03 8.57 4.03 8.096c0-.254.102-.491.593-.491h1.744c.44 0 .61.203.78.678.863 2.49 2.303 4.675 2.896 4.675.22 0 .322-.102.322-.66V9.721c-.068-1.186-.695-1.287-.695-1.71 0-.204.17-.407.44-.407h2.744c.373 0 .508.203.508.643v3.473c0 .372.17.508.271.508.22 0 .407-.136.813-.542 1.254-1.406 2.151-3.574 2.151-3.574.119-.254.322-.491.762-.491h1.744c.525 0 .644.27.525.643-.22 1.017-2.354 4.031-2.354 4.031-.186.305-.254.44 0 .78.186.254.796.779 1.202 1.253.745.847 1.32 1.558 1.473 2.05.17.491-.085.745-.576.745z"/>
+              </svg>
+            </a>
+            <a
+              href="https://instagram.com/doramusic"
               target="_blank"
               rel="noopener noreferrer"
               className="text-white/80 hover:text-gold transition-colors duration-300"
@@ -57,25 +68,14 @@ export default function Hero({ language }: HeroProps) {
               </svg>
             </a>
             <a
-              href="https://facebook.com"
+              href="https://open.spotify.com/artist/dora"
               target="_blank"
               rel="noopener noreferrer"
               className="text-white/80 hover:text-gold transition-colors duration-300"
             >
-              <span className="sr-only">Facebook</span>
+              <span className="sr-only">Spotify</span>
               <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
-              </svg>
-            </a>
-            <a
-              href="https://linkedin.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-white/80 hover:text-gold transition-colors duration-300"
-            >
-              <span className="sr-only">LinkedIn</span>
-              <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 24 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0z" />
+                <path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/>
               </svg>
             </a>
           </div>
