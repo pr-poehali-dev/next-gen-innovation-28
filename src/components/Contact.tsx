@@ -16,8 +16,8 @@ const translations = {
     location: "Location",
     name: "Name",
     successMessage: "Message sent successfully!",
-    locationValue: "Berlin, Germany",
-    phoneValue: "+49 (30) 123-4567",
+    locationValue: "Russia",
+    phoneValue: "+7 (937) 317-00-15",
   },
   de: {
     heading: "Kontakt",
@@ -29,8 +29,8 @@ const translations = {
     location: "Standort",
     name: "Name",
     successMessage: "Nachricht erfolgreich gesendet!",
-    locationValue: "Berlin, Deutschland",
-    phoneValue: "+49 (30) 123-4567",
+    locationValue: "Russland",
+    phoneValue: "+7 (937) 317-00-15",
   },
   ru: {
     heading: "Контакты",
@@ -39,11 +39,11 @@ const translations = {
     phone: "Телефон",
     message: "Сообщение",
     send: "Отправить",
-    location: "Город",
+    location: "Страна",
     name: "Имя",
     successMessage: "Сообщение успешно отправлено!",
-    locationValue: "Берлин, Германия",
-    phoneValue: "+49 (30) 123-4567",
+    locationValue: "Россия",
+    phoneValue: "+7 (937) 317-00-15",
   },
 }
 
@@ -55,7 +55,7 @@ export default function Contact({ language }: ContactProps) {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
 
-    const mailtoLink = `mailto:hello@example.com?subject=${encodeURIComponent(`New message from ${formData.name}`)}&body=${encodeURIComponent(`From: ${formData.email}\n\n${formData.message}`)}`
+    const mailtoLink = `mailto:aleksandrnikolaea121@gmail.com?subject=${encodeURIComponent(`New message from ${formData.name}`)}&body=${encodeURIComponent(`From: ${formData.email}\n\n${formData.message}`)}`
     window.location.href = mailtoLink
 
     setSubmitted(true)
@@ -77,7 +77,7 @@ export default function Contact({ language }: ContactProps) {
           <div className="space-y-8 animate-fade-in-up">
             <div>
               <small className="font-medium text-charcoal/70 mb-2 block">{t.email}</small>
-              <p className="text-charcoal">hello@example.com</p>
+              <p className="text-charcoal">aleksandrnikolaea121@gmail.com</p>
             </div>
             <div>
               <small className="font-medium text-charcoal/70 mb-2 block">{t.phone}</small>

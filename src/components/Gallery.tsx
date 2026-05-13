@@ -16,88 +16,48 @@ const translations = {
   },
 }
 
+const photos = [
+  {
+    id: 1,
+    image: "https://cdn.poehali.dev/projects/695ae91f-185b-4364-948f-4bce9bcfb525/files/0b6cd734-bacb-414e-8ca5-432f009769d1.jpg",
+    en: "On Stage",
+    de: "Auf der Bühne",
+    ru: "На сцене",
+  },
+  {
+    id: 2,
+    image: "https://cdn.poehali.dev/projects/695ae91f-185b-4364-948f-4bce9bcfb525/files/4e79bc58-1fbc-4120-bfc1-3cd27a44b00f.jpg",
+    en: "Studio Portrait",
+    de: "Studioporträt",
+    ru: "Студийный портрет",
+  },
+  {
+    id: 3,
+    image: "https://cdn.poehali.dev/projects/695ae91f-185b-4364-948f-4bce9bcfb525/files/d1aeb9a7-cc0f-4262-a047-0e3e10b5b5d0.jpg",
+    en: "With Guitar",
+    de: "Mit Gitarre",
+    ru: "С гитарой",
+  },
+  {
+    id: 4,
+    image: "https://cdn.poehali.dev/projects/695ae91f-185b-4364-948f-4bce9bcfb525/files/8eb339c4-f275-4ab8-b4bc-29b9fd153377.jpg",
+    en: "Backstage",
+    de: "Backstage",
+    ru: "За кулисами",
+  },
+  {
+    id: 5,
+    image: "https://cdn.poehali.dev/projects/695ae91f-185b-4364-948f-4bce9bcfb525/files/8131475a-368a-44a9-93ec-b6314b300823.jpg",
+    en: "Urban Session",
+    de: "Urbane Session",
+    ru: "Городская съёмка",
+  },
+]
+
 const galleryItems = {
-  en: [
-    {
-      id: 1,
-      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/DSCF3862.JPG-QFjEqVJxprhU4vjLcesRXlZsTk7pRM.jpeg",
-      title: "Archway Portrait",
-    },
-    {
-      id: 2,
-      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/DSCF3805.JPG-yq7ymSGUhJV4rq9yyyquEOMeXXYLDp.jpeg",
-      title: "Classical Courtyard",
-    },
-    {
-      id: 3,
-      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/DSCF3938.JPG-OmXjCML5NpcJKstfM3mOWBFPt1HDzH.jpeg",
-      title: "Tunnel Lights",
-    },
-    {
-      id: 4,
-      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/DSCF3768.JPG-Q3wacl3wQVQUhGT4jgw6Rf3OVCni3R.jpeg",
-      title: "Piano Moment",
-    },
-    {
-      id: 5,
-      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/DSCF3917.JPG-iPCjoD8pZGUcg5qzfRnrkOrb14tK1E.jpeg",
-      title: "Urban Gallery",
-    },
-  ],
-  de: [
-    {
-      id: 1,
-      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/DSCF3862.JPG-QFjEqVJxprhU4vjLcesRXlZsTk7pRM.jpeg",
-      title: "Bogenportrat",
-    },
-    {
-      id: 2,
-      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/DSCF3805.JPG-yq7ymSGUhJV4rq9yyyquEOMeXXYLDp.jpeg",
-      title: "Klassischer Innenhof",
-    },
-    {
-      id: 3,
-      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/DSCF3938.JPG-OmXjCML5NpcJKstfM3mOWBFPt1HDzH.jpeg",
-      title: "Tunnellichter",
-    },
-    {
-      id: 4,
-      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/DSCF3768.JPG-Q3wacl3wQVQUhGT4jgw6Rf3OVCni3R.jpeg",
-      title: "Am Klavier",
-    },
-    {
-      id: 5,
-      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/DSCF3917.JPG-iPCjoD8pZGUcg5qzfRnrkOrb14tK1E.jpeg",
-      title: "Stadtgalerie",
-    },
-  ],
-  ru: [
-    {
-      id: 1,
-      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/DSCF3862.JPG-QFjEqVJxprhU4vjLcesRXlZsTk7pRM.jpeg",
-      title: "Портрет в арке",
-    },
-    {
-      id: 2,
-      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/DSCF3805.JPG-yq7ymSGUhJV4rq9yyyquEOMeXXYLDp.jpeg",
-      title: "Классический двор",
-    },
-    {
-      id: 3,
-      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/DSCF3938.JPG-OmXjCML5NpcJKstfM3mOWBFPt1HDzH.jpeg",
-      title: "Огни туннеля",
-    },
-    {
-      id: 4,
-      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/DSCF3768.JPG-Q3wacl3wQVQUhGT4jgw6Rf3OVCni3R.jpeg",
-      title: "За роялем",
-    },
-    {
-      id: 5,
-      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/DSCF3917.JPG-iPCjoD8pZGUcg5qzfRnrkOrb14tK1E.jpeg",
-      title: "Городская галерея",
-    },
-  ],
+  en: photos.map((p) => ({ id: p.id, image: p.image, title: p.en })),
+  de: photos.map((p) => ({ id: p.id, image: p.image, title: p.de })),
+  ru: photos.map((p) => ({ id: p.id, image: p.image, title: p.ru })),
 }
 
 export default function Gallery({ language }: GalleryProps) {
