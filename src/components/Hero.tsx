@@ -28,9 +28,9 @@ export default function Hero({ language }: HeroProps) {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <img
-          src="/images/dscf3797.jpeg"
+          src="https://cdn.poehali.dev/projects/695ae91f-185b-4364-948f-4bce9bcfb525/files/6161f190-9783-4524-bced-906460cf1ec2.jpg"
           alt="Дора"
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover object-top"
         />
         <div className="absolute inset-0 bg-charcoal/35"></div>
       </div>
